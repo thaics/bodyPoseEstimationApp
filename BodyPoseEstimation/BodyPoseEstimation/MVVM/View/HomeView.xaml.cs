@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
+using System.Windows.Forms;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace BodyPoseEstimation.MVVM.View
 {
@@ -23,6 +20,22 @@ namespace BodyPoseEstimation.MVVM.View
         public HomeView()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.png)|*.jpg; *.jpeg; *.png";
+            Console.WriteLine("nope" + open.FileName);
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                Console.WriteLine("OKAY");
+                Console.WriteLine(open.FileName);
+                // display image in picture box  
+                img1.Source = new BitmapImage(new Uri(open.FileName, UriKind.Relative));
+                img1.BringIntoView();
+            }
         }
     }
 }

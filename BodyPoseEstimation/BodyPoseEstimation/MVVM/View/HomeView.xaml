@@ -5,35 +5,40 @@
          xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
          mc:Ignorable="d" 
          d:DesignHeight="460" d:DesignWidth="800">
+
     <StackPanel>
         <TextBlock Text=""
                    Foreground="White"
                    FontSize="20"
-                   HorizontalAlignment="Left"
-                   Margin="0 0 0 20"/>
+                   HorizontalAlignment="Left"/>
 
         <StackPanel Orientation="Horizontal">
-            <Border Width="300"
-                    Height="70"
+            <Border Width="200"
+                    Height="50"
                     CornerRadius="10"
-                    Margin="250 0 0 10">
-                <Button Background="#5bc3ff"
-                        <TextBlock Text="Files Uploaded"
-                   Foreground="White"
-                   FontSize="20"
-                   HorizontalAlignment="Left"
-                   Margin="0 0 0 10"/>>
+                    Margin="0 0 0 30">
+                <Button x:Name="button1" 
+                    Background="#5bc3ff" FontFamily="Poppins" FontSize="20" Click="button1_Click">
+                        Select Images
+                    </Button>
                     
+            </Border>
+            <Border Width="200"
+                    Height="50"
+                    CornerRadius="10"
+                    Margin="20 0 0 30">
+                <Button x:Name="button2" 
+                        Background="MediumSeaGreen" FontFamily="Poppins" FontSize="20">
+                    Process Results
                 </Button>
             </Border>
         </StackPanel>
-        
+
         <StackPanel>
-            <TextBlock Text="Files Uploaded"
+            <TextBlock Text="Images Uploaded"
                    Foreground="White"
                    FontSize="20"
-                   HorizontalAlignment="Left"
-                   Margin="0 0 0 10"/>
+                   HorizontalAlignment="Left"/>
 
             <StackPanel Orientation="Horizontal">
                 <StackPanel.Resources>
@@ -42,43 +47,16 @@
                     </Style>
                 </StackPanel.Resources>
 
-                <Border Width="150"
-                        Height="100"
-                        Background="#844eff"
-                        CornerRadius="10"
-                        Margin="0">
-                </Border>
+                <Image x:Name="img1"
+                           Width="150"
+                           Height="100"
+                           Source="C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\Images\man.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"
+                           RenderTransformOrigin="0.5,0.5">
+                </Image>
 
                 <Border Width="150"
-                        Height="100"
-                        Background="#4e99ff"
-                        CornerRadius="10">
-                </Border>
-            </StackPanel>
-        </StackPanel>
-        
-        <StackPanel>
-            <TextBlock Text="Preview"
-                   Foreground="White"
-                   FontSize="20"
-                   HorizontalAlignment="Left"
-                   Margin="0 0 0 10"/>
-
-            <StackPanel Orientation="Horizontal">
-                <StackPanel.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="Margin" Value="15 0 0 0" />
-                    </Style>
-                </StackPanel.Resources>
-
-                <Border Width="100"
-                        Height="100"
-                        Background="#844eff"
-                        CornerRadius="10"
-                        Margin="0">
-                </Border>
-
-                <Border Width="100"
                         Height="100"
                         Background="#4e99ff"
                         CornerRadius="10">
