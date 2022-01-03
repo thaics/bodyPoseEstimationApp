@@ -27,3 +27,5 @@ C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyP
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows\ref\BodyPoseEstimation.dll
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows\BodyPoseEstimation.pdb
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows\BodyPoseEstimation.genruntimeconfig.cache
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows\MVVM\View\AboutView.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows\MVVM\View\AboutView.baml

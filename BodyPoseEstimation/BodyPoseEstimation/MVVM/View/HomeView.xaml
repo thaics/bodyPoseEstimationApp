@@ -19,7 +19,12 @@
                     Margin="0 0 0 30">
                 <Button x:Name="button1" 
                     Background="#5bc3ff" FontFamily="Poppins" FontSize="20" Click="button1_Click">
-                        Select Images
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    Select Images
                     </Button>
                     
             </Border>
@@ -28,8 +33,27 @@
                     CornerRadius="10"
                     Margin="20 0 0 30">
                 <Button x:Name="button2" 
-                        Background="MediumSeaGreen" FontFamily="Poppins" FontSize="20">
+                        Background="MediumSeaGreen" FontFamily="Poppins" FontSize="20" Click="button2_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
                     Process Results
+                </Button>
+            </Border>
+            <Border Width="200"
+                    Height="50"
+                    CornerRadius="10"
+                    Margin="20 0 0 30">
+                <Button x:Name="button3" 
+                        Background="IndianRed" FontFamily="Poppins" FontSize="20" Click="button3_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    Clear Images
                 </Button>
             </Border>
         </StackPanel>
@@ -39,29 +63,11 @@
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"/>
-
-            <StackPanel Orientation="Horizontal">
-                <StackPanel.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="Margin" Value="15 0 0 0" />
-                    </Style>
-                </StackPanel.Resources>
-
-                <Image x:Name="img1"
-                           Width="150"
-                           Height="100"
-                           Source="C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\Images\man.png"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom"
-                           RenderTransformOrigin="0.5,0.5">
-                </Image>
-
-                <Border Width="150"
-                        Height="100"
-                        Background="#4e99ff"
-                        CornerRadius="10">
-                </Border>
-            </StackPanel>
+            <ScrollViewer  VerticalScrollBarVisibility="Visible"
+                           Width="740"
+                           Height="325">
+                <WrapPanel  x:Name="gallery"/>
+            </ScrollViewer>
         </StackPanel>
     </StackPanel>
 </UserControl>

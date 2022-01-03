@@ -1,0 +1,5 @@
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPoseEstimation.exe
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPoseEstimation.dll
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPoseEstimation.deps.json
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPoseEstimation.runtimeconfig.json
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPoseEstimation.pdb
