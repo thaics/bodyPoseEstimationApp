@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ZB38nX1GyVxZjsIamhXEUqPYFhi0DjCIH9orhCNavhOO8aX2+O0srxsQeMWabNmCgYzYhs/iq9JatzlNH5jHwA==",
+  "dgSpecHash": "Mgn6aTq9cILWxZL4sX57eIZ1S+fz/DelhUnmHWWipJX6sbqu9S21Nr2yQ8q/t/8XCj0BFjICik9en3Zh6xaH3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Amy Truong\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Amy Truong\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512",
+    "C:\\Users\\Amy Truong\\.nuget\\packages\\python.deployment\\1.2.0\\python.deployment.1.2.0.nupkg.sha512",
+    "C:\\Users\\Amy Truong\\.nuget\\packages\\python.included\\3.7.3.13\\python.included.3.7.3.13.nupkg.sha512",
+    "C:\\Users\\Amy Truong\\.nuget\\packages\\pythonnet_netstandard_py37_win\\2.5.1\\pythonnet_netstandard_py37_win.2.5.1.nupkg.sha512"
+  ],
   "logs": []
 }

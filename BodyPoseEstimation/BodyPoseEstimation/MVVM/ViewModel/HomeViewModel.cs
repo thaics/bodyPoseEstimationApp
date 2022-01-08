@@ -9,5 +9,10 @@ namespace BodyPoseEstimation.MVVM.ViewModel
         {
             
         }
+
+        public static HomeViewModel Instance
+        {
+            get;
+        } = new HomeViewModel();
     }
 }

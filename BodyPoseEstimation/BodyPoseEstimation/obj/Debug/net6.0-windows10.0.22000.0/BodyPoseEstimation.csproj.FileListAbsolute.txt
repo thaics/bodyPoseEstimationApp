@@ -1,0 +1,13 @@
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\BodyPoseEstimation.csproj.AssemblyReference.cache
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MVVM\View\DiscoveryView.baml
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MVVM\View\HomeView.baml
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\Theme\MenuButtonTheme.baml
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\Theme\TextBoxTheme.baml
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MainWindow.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MVVM\View\AboutView.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MVVM\View\DiscoveryView.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\MVVM\View\HomeView.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\App.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\BodyPoseEstimation_MarkupCompile.cache
+C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Debug\net6.0-windows10.0.22000.0\BodyPoseEstimation_MarkupCompile.lref

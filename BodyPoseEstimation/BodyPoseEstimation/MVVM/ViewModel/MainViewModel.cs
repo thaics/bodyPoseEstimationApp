@@ -10,11 +10,12 @@ namespace BodyPoseEstimation.MVVM.ViewModel
         public RelayCommand CloseCommand { get; set; }
         public RelayCommand AboutViewCommand { get; set; }
         public HomeViewModel HomeVM { get; set; }
+        public HomeViewModel prevHomeVM { get; set; }
         public DiscoveryViewModel DiscoveryVM { get; set; }
         public AboutViewModel AboutVM { get; set; }
 
-        private object _currentView = null!;
 
+        private object _currentView = null!;
         public object CurrentView
         {
             get { return _currentView; }
@@ -24,10 +25,9 @@ namespace BodyPoseEstimation.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
-
         public MainViewModel()
         {
-            HomeVM = new HomeViewModel();
+            HomeVM = HomeViewModel.Instance;
             DiscoveryVM = new DiscoveryViewModel();
             AboutVM = new AboutViewModel();
             
@@ -35,6 +35,7 @@ namespace BodyPoseEstimation.MVVM.ViewModel
 
             HomeViewCommand = new RelayCommand((o) => {
                 CurrentView = HomeVM;
+                
             });
 
             DiscoveryViewCommand = new RelayCommand((o) => {

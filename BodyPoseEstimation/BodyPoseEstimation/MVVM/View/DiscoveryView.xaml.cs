@@ -24,5 +24,6 @@ namespace BodyPoseEstimation.MVVM.View
         {
             InitializeComponent();
         }
+
     }
 }

@@ -1,10 +1,11 @@
 ﻿<UserControl x:Class="BodyPoseEstimation.MVVM.View.HomeView"
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"     
          xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
          mc:Ignorable="d" 
          d:DesignHeight="460" d:DesignWidth="800">
+
 
     <StackPanel>
         <TextBlock Text=""
@@ -25,8 +26,7 @@
                         </Style>
                     </Button.Resources>
                     Select Images
-                    </Button>
-                    
+                </Button>
             </Border>
             <Border Width="200"
                     Height="50"
@@ -70,4 +70,5 @@
             </ScrollViewer>
         </StackPanel>
     </StackPanel>
+
 </UserControl>

@@ -14,7 +14,6 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown">
-
     <Window.DataContext>
         <viewModel:MainViewModel></viewModel:MainViewModel>
     </Window.DataContext>
@@ -69,16 +68,20 @@
                        Margin="5"
                        Grid.Column="1" 
                        FontFamily="/Fonts/#Poppins" />
-            
 
-            <RadioButton Grid.Column="2"
-                         Background="#FF605C"
-                         Width="20"
-                         Height="20"
-                         Margin="10"
+
+            <Button Grid.Column="2"
+                         Background="IndianRed"
+                         Width="30"
+                         Height="30"
+                         Margin="20"
                          VerticalAlignment="Top"
-                         Style="{StaticResource MenuButtonTheme}"
-                         Command="{Binding CloseCommand}" Content="X" />
+                         Command="{Binding CloseCommand}">
+                <Image Source="C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\Images\close-window.png"
+                >
+                </Image>
+                
+            </Button>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
