@@ -14,15 +14,15 @@ namespace BodyPoseEstimation.Core
             remove { CommandManager.RequerySuggested -= value; }
         }
 
-        public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null )
+        public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
             _execute = execute;
             _canExecute = canExecute;
         }
 
-        public bool  CanExecute(object parameter)
+        public bool CanExecute(object parameter)
         {
-            return _canExecute == null || _canExecute(parameter); 
+            return _canExecute == null || _canExecute(parameter);
         }
 
         public void Execute(object parameter)

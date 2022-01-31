@@ -1,0 +1,9 @@
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\BodyPoseEstimation.pdb
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\input.txt
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\PoseDetection.py
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\D3DCompiler_47_cor3.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\PenImc_cor3.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\PresentationNative_cor3.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\vcruntime140_cor3.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\wpfgfx_cor3.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\publish\BodyPose\BodyPoseEstimation.exe

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\
 BodyPoseEstimation
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\App.xaml
-5-334153495
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\App.xaml
+6364504889
 
-111968558831
-203-1258661629
-MainWindow.xaml;MVVM\View\DiscoveryView.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+13-1146098784
+2081422244999
+MainWindow.xaml;MVVM\View\AboutView.xaml;MVVM\View\DiscoveryView.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False
 

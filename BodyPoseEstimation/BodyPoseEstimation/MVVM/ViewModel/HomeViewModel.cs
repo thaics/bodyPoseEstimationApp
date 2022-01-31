@@ -1,4 +1,3 @@
-using System;
 using BodyPoseEstimation.Core;
 
 namespace BodyPoseEstimation.MVVM.ViewModel
@@ -7,7 +6,7 @@ namespace BodyPoseEstimation.MVVM.ViewModel
     {
         public HomeViewModel()
         {
-            
+
         }
 
         public static HomeViewModel Instance

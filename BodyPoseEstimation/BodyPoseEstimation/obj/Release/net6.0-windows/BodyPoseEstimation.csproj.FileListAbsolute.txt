@@ -27,3 +27,40 @@ C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyP
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\ref\BodyPoseEstimation.dll
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.pdb
 C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.genruntimeconfig.cache
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\BodyPoseEstimation.exe
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\BodyPoseEstimation.deps.json
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\BodyPoseEstimation.runtimeconfig.json
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\BodyPoseEstimation.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\ref\BodyPoseEstimation.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\BodyPoseEstimation.pdb
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\Python.Deployment.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\Python.Included.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\bin\Release\net6.0-windows\Python.Runtime.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.csproj.AssemblyReference.cache
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\DiscoveryView.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\HomeView.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\Theme\MenuButtonTheme.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\Theme\TextBoxTheme.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\AboutView.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\DiscoveryView.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\HomeView.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\App.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation_MarkupCompile.cache
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation_MarkupCompile.lref
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\App.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MainWindow.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\MVVM\View\AboutView.baml
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.g.resources
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.AssemblyInfoInputs.cache
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.AssemblyInfo.cs
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.csproj.CopyComplete
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\ref\BodyPoseEstimation.dll
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.pdb
+C:\Users\Thai\Documents\GitHub\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\obj\Release\net6.0-windows\BodyPoseEstimation.genruntimeconfig.cache

@@ -47,12 +47,7 @@
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}" />
-                <RadioButton Content="Results"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding DiscoveryViewCommand}" />
+                
                 <RadioButton Content="About"
                              Height="50"
                              Foreground="White"
@@ -77,10 +72,7 @@
                          Margin="20"
                          VerticalAlignment="Top"
                          Command="{Binding CloseCommand}">
-                <Image Source="C:\Users\Amy Truong\Documents\Git\bodyPoseEstimationApp\BodyPoseEstimation\BodyPoseEstimation\Images\close-window.png"
-                >
-                </Image>
-                
+
             </Button>
 
             <ContentControl Grid.Row="1"

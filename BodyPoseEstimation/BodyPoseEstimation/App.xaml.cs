@@ -8,6 +8,6 @@ namespace BodyPoseEstimation
     /// </summary>
     public partial class App : Application
     {
- 
+
     }
 }

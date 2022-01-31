@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj": {}
+    "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj": {
+    "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
+        "projectUniqueName": "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
         "projectName": "BodyPoseEstimation",
-        "projectPath": "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
-        "packagesPath": "C:\\Users\\Amy Truong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amy Truong\\Documents\\Git\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\obj\\publish\\win-x86\\",
+        "projectPath": "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
+        "packagesPath": "C:\\Users\\Thai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Amy Truong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Thai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -42,6 +39,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Python.Included": {
+              "target": "Package",
+              "version": "[3.7.3.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

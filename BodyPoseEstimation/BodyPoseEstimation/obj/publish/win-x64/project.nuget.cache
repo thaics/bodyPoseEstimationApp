@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "qYCpkeLyZ49Bo+TwHZJvGksUOKXyEJYwrlAULG3sZmeRtebzxcVl6Ab81xlJxdGDSmOyaBZH7YNNPkJOAz9kpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thai\\Documents\\GitHub\\bodyPoseEstimationApp\\BodyPoseEstimation\\BodyPoseEstimation\\BodyPoseEstimation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thai\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\python.deployment\\1.2.0\\python.deployment.1.2.0.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\python.included\\3.7.3.13\\python.included.3.7.3.13.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\pythonnet_netstandard_py37_win\\2.5.1\\pythonnet_netstandard_py37_win.2.5.1.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.1\\microsoft.netcore.app.runtime.win-x64.6.0.1.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.1.nupkg.sha512",
+    "C:\\Users\\Thai\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.1\\microsoft.aspnetcore.app.runtime.win-x64.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

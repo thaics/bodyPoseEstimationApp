@@ -1,11 +1,5 @@
-﻿using Python.Included;
-using Python.Runtime;
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Diagnostics;
 
 namespace BodyPoseEstimation
 {
@@ -19,7 +13,7 @@ namespace BodyPoseEstimation
             InitializeComponent();
         }
 
-        private void Grid_MouseDown( object sender, MouseButtonEventArgs e)
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {

@@ -1,18 +1,17 @@
-﻿using System;
+﻿using Python.Included;
+using Python.Runtime;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using Image = System.Windows.Controls.Image;
-using UserControl = System.Windows.Controls.UserControl;
 using Point = System.Drawing.Point;
-using Python.Included;
-using System.Diagnostics;
-using Python.Runtime;
-using System.Threading.Tasks;
-using System.Reflection;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace BodyPoseEstimation.MVVM.View
 {
@@ -20,10 +19,10 @@ namespace BodyPoseEstimation.MVVM.View
     /// Interaction logic for HomeView.xaml
     /// </summary>
     public partial class HomeView : UserControl
-    {   
+    {
         List<String> files = new List<String>();
-        Dictionary<String,String> picHeights = new Dictionary<String,String>();
-
+        Dictionary<String, String> picHeights = new Dictionary<String, String>();
+        string outputFolder = "";
         public HomeView()
         {
             InitializeComponent();
@@ -48,7 +47,8 @@ namespace BodyPoseEstimation.MVVM.View
                         files.Add(fname);
                         Debug.WriteLine(fname);
                         Image img = createImage(fi);
-                        img.MouseLeftButtonDown += (s, e) => {
+                        img.MouseLeftButtonDown += (s, e) =>
+                        {
                             image_Click(img);
                         };
                         gallery.Children.Add(img);
@@ -58,7 +58,7 @@ namespace BodyPoseEstimation.MVVM.View
         }
 
         private void image_Click(Image img)
-        { 
+        {
             Form form = new Form();
             TextBox textBox = new TextBox();
             textBox.Width = 200;
@@ -87,7 +87,7 @@ namespace BodyPoseEstimation.MVVM.View
             form.Width = 200;
             form.ShowDialog();
         }
- 
+
         private Image createImage(FileInfo fi)
         {
             BitmapImage bitmapImage = new BitmapImage();
@@ -104,85 +104,129 @@ namespace BodyPoseEstimation.MVVM.View
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
-        {   
-            files = new List<String>(); 
+        {
+            files = new List<String>();
+            picHeights = new Dictionary<string, string>();
             gallery.Children.Clear();
             Debug.WriteLine("clearing");
         }
 
         private async void button2_Click(object sender, RoutedEventArgs e)
         {
-            if (!Installer.IsPythonInstalled())
+            if (outputFolder.Equals(""))
             {
-                Debug.WriteLine("Starting python.included process");
-                await downloadPython();
-                Debug.WriteLine("Finished");
+                using (var dialog = new FolderBrowserDialog())
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        outputFolder = dialog.SelectedPath;
+                    }
             }
-            string path = System.IO.Path.GetFullPath(@"..\..\..\");
-            using (StreamWriter sw = new StreamWriter(Path.Combine(path, "input.txt"), false))
+            else
             {
-                foreach (String file in files)
+                string path = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
+                using (StreamWriter sw = new StreamWriter(Path.Combine(path, "input.txt"), false))
                 {
-                    string height = "NAN";
-                    if (picHeights.ContainsKey(file)) height = picHeights[file];
-                    await sw.WriteAsync(file + " " + height + "\n");
+                    foreach (String file in files)
+                    {
+                        string height = "1";
+                        if (picHeights.ContainsKey(file)) height = picHeights[file];
+                        await sw.WriteAsync(file + "," + height + "\n");
+                    }
                 }
+                await downloadPython(outputFolder);
+
+                Debug.WriteLine("done");
+                Form form = new Form();
+                Button btn = new Button();
+                btn.Width = 300;
+                btn.Height = 300;
+                btn.Text = "Finished. Click to close.";
+                btn.Location = new Point(0, 30);
+                btn.BackColor = System.Drawing.Color.Green;
+                btn.Click += (s, e) =>
+                {
+                    form.Hide();
+                };
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.StartPosition = FormStartPosition.CenterParent;
+                form.AcceptButton = btn;
+                form.MinimizeBox = false;
+                form.MaximizeBox = false;
+                form.Controls.Add(btn);
+                form.Height = 300;
+                form.Width = 300;
+                form.ShowDialog();
             }
-            Debug.WriteLine("done");
         }
 
-        private async static Task downloadPython()
+        private async static Task downloadPython(string outputFolder)
         {
-            // see what the installer is doing
-            Installer.LogMessage += Console.WriteLine;
+            string path = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
+            string inputPath = Path.Combine(path, "input.txt");
 
-            Installer.InstallPath = Installer.InstallPath + "\\pytest";
-            Python.Deployment.Installer.InstallPath = Installer.InstallPath;
-            if (!Directory.Exists(Installer.InstallPath))
+            if (!Installer.IsPythonInstalled())
             {
-                Directory.CreateDirectory(Installer.InstallPath);
-            }
+                // see what the installer is doing
+                Installer.LogMessage += Console.WriteLine;
 
-            // install the embedded python distribution
-            await Installer.SetupPython();
-
-            string path = System.IO.Path.GetFullPath(@"..\..\..\");
-
-            // install pip3 for package installation
-            if (!Installer.IsPipInstalled())
-            {
-                string libDir = Path.Combine(Installer.EmbeddedPythonHome, "Lib");
-                Debug.WriteLine(libDir);
-                if (!Directory.Exists(libDir))
+                Installer.InstallPath = Installer.InstallPath + "\\pytest";
+                Python.Deployment.Installer.InstallPath = Installer.InstallPath;
+                if (!Directory.Exists(Installer.InstallPath))
                 {
-                    Directory.CreateDirectory(libDir);
+                    Directory.CreateDirectory(Installer.InstallPath);
                 }
-                Process.Start("cmd", $"/C cd {libDir} && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py");
-                Process.Start("cmd", $"/C cd {Installer.EmbeddedPythonHome} && python.exe Lib\\get-pip.py");
-            }
 
-            string pipPath = Path.Combine(Installer.EmbeddedPythonHome, "Scripts");
+                // install the embedded python distribution
+                await Installer.SetupPython();
 
-            // install libraries
-            if (!Installer.IsModuleInstalled("mediapipe"))
-            {
-                Process.Start("cmd", $"/C cd {pipPath} && pip.exe install mediapipe");
-            }
+                // install pip3 for package installation
+                if (!Installer.IsPipInstalled())
+                {
+                    string libDir = Path.Combine(Installer.EmbeddedPythonHome, "Lib");
+                    Debug.WriteLine(libDir);
+                    if (!Directory.Exists(libDir))
+                    {
+                        Directory.CreateDirectory(libDir);
+                    }
+                    var p1 = Process.Start("cmd", $"/C cd {libDir} && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py");
+                    p1.Start();
+                    p1.WaitForExit();
+                    p1.Close();
+                    var p = Process.Start("cmd", $"/K cd {Installer.EmbeddedPythonHome} && python.exe Lib\\get-pip.py");
+                    p.Start();
+                    p.WaitForExit();
+                    p.Close();
+                }
 
-            if (!Installer.IsModuleInstalled("opencv-python"))
-            {
-                Process.Start("cmd", $"/C cd {pipPath} && pip.exe install opencv-python");
+                string pipPath = Path.Combine(Installer.EmbeddedPythonHome, "Scripts");
+
+                // install libraries
+                if (!Installer.IsModuleInstalled("mediapipe"))
+                {
+                    var p = Process.Start("cmd", $"/C cd {pipPath} && pip.exe install mediapipe");
+                    p.Start();
+                    p.WaitForExit();
+                }
+
+                if (!Installer.IsModuleInstalled("opencv"))
+                {
+                    var p = Process.Start("cmd", $"/C cd {pipPath} && pip.exe install opencv-python");
+                    p.Start();
+                    p.WaitForExit();
+                }
+
             }
 
             // start python engine
             PythonEngine.Initialize();
-
+            string scriptpath = Path.Combine(path, "PoseDetection.py");
+            string command = Path.Combine(path, scriptpath + " " + inputPath + " " + outputFolder);
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = Installer.EmbeddedPythonHome + @"\python.exe",
-                    Arguments = "Python/Script/PoseDetection.py",
+                    Arguments = command,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
@@ -194,7 +238,7 @@ namespace BodyPoseEstimation.MVVM.View
 
             process.ErrorDataReceived += Process_OutputDataReceived;
             process.OutputDataReceived += Process_OutputDataReceived;
-
+            Debug.WriteLine("caling script");
             process.Start();
             process.BeginErrorReadLine();
             process.BeginOutputReadLine();
@@ -203,7 +247,7 @@ namespace BodyPoseEstimation.MVVM.View
 
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
-            
+
             Debug.WriteLine(e.Data);
         }
     }
